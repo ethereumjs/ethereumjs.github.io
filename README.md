@@ -36,8 +36,11 @@ See [node-blockchain-server](https://github.com/ethereumjs/node-blockchain-serve
 * [node-devp2p-dpt](https://github.com/ethereumjs/node-devp2p-dpt): implementation of the [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) DPT (peer table) protocol for Ethereum
 * [organization](https://github.com/ethereumjs/organization) and [ideas](https://github.com/ethereumjs/ideas): plans and discussions
 * [rlp](https://github.com/ethereumjs/rlp): [RLP (Recursive Length Prefix)](https://github.com/ethereum/wiki/wiki/RLP) encoding and decoding
-* [solidity.js](https://github.com/ethereumjs/solidity.js): ABI encoding and decoding (the relevant code split out from web3.js)
-* [web3.js](https://github.com/ethereumjs/web3.js): the complete API as seen in [geth](https://github.com/ethereum/go-ethereum)
+
+
+## Ethereum JS projects not tracked here
+* [web3.js](https://github.com/ethereum/web3.js): the complete API as seen in the [wiki](https://github.com/ethereum/wiki/blob/master/JSON-RPC.md)
+* [solidity.js](https://github.com/ethereum/solidity.js): ABI encoding and decoding (the relevant code split out from web3.js)
 
 ## Contributing and contact
 
