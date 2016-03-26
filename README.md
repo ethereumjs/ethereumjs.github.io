@@ -8,7 +8,7 @@ Check out [keythereum](https://github.com/ethereumjs/keythereum) for managing ke
 
 ### Creating a Dapp?
 
-You will need to interface with the Ethereum network. [web3.js](https://github.com/ethereumjs/web3.js) provides a complete RPC interface from Javascript. If looking for a more lightweight option, [ethereumjs-abi](https://github.com/axic/ethereumjs-abi) or [solidity.js](https://github.com/ethereumjs/solidity.js) can handle the ABI encoding.
+You will need to interface with the Ethereum network. [web3.js](https://github.com/ethereum/web3.js) provides a complete Javascript API to interact with the RPC interface. If looking for a more lightweight option, [ethereumjs-abi](https://github.com/axic/ethereumjs-abi) or [solidity.js](https://github.com/ethereumjs/solidity.js) can handle the ABI encoding.
 
 ### Interested in running a node?
 
@@ -39,7 +39,7 @@ See [node-blockchain-server](https://github.com/ethereumjs/node-blockchain-serve
 
 
 ## Ethereum JS projects not tracked here
-* [web3.js](https://github.com/ethereum/web3.js): the complete API as seen in the [wiki](https://github.com/ethereum/wiki/blob/master/JSON-RPC.md)
+* [web3.js](https://github.com/ethereum/web3.js): the complete API as seen in the [wiki](https://github.com/ethereum/wiki/wiki/JavaScript-API)
 * [solidity.js](https://github.com/ethereum/solidity.js): ABI encoding and decoding (the relevant code split out from web3.js)
 
 ## Contributing and contact
