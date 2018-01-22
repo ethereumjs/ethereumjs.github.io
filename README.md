@@ -4,7 +4,7 @@ This is a collection of libraries and utilities for [Ethereum](https://ethereum.
 
 ### Creating an online wallet?
 
-Check out [keythereum](https://github.com/ethereumjs/keythereum) or [ethereumjs-wallet](https://github.com/axic/ethereumjs-wallet) (with HD wallet support) for managing keys and [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx) for creating transactions with them.
+Check out [keythereum](https://github.com/ethereumjs/keythereum) or [ethereumjs-wallet](https://github.com/ethereumjs/ethereumjs-wallet) (with HD wallet support) for managing keys and [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx) for creating transactions with them.
 [ethereumjs-icap](https://github.com/ethereumjs/ethereumjs-icap) might also come handy for dealing with the ICAP (Ethereum in IBAN) format.
 
 ### Creating a Dapp?
@@ -31,7 +31,7 @@ See [node-blockchain-server](https://github.com/ethereumjs/node-blockchain-serve
 * [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx): transaction creation, manipulation, signing and verification
 * [ethereumjs-units](https://github.com/ethereumjs/ethereumjs-units): Ethereum unit conversion
 * [ethereumjs-util](https://github.com/ethereumjs/ethereumjs-util): a collection of frequently used methods by the other libraries
-* [ethereumjs-wallet](https://github.com/axic/ethereumjs-wallet): lightweight toolkit for managing Ethereum keys, including HD wallet support
+* [ethereumjs-wallet](https://github.com/ethereumjs/ethereumjs-wallet): lightweight toolkit for managing Ethereum keys, including HD wallet support
 * [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm): a complete EVM (Ethereum Virtual Machine) and state processing implementation
 * [geth.js](https://github.com/ethereumjs/geth.js): start and stop geth from Node.js
 * [helpeth](https://github.com/ethereumjs/helpeth): purists' commandline tool for key and transaction management
