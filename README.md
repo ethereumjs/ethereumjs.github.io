@@ -10,8 +10,25 @@ introduction to the ecosystem and the community.
 Site is hosted at https://ethereumjs.github.io/ via [GitHub Pages](https://pages.github.com) and
 build with [Jekyll](https://jekyllrb.com/) (see also ["Jekyll and GH Pages"](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)).
 
+It uses the [Cayman](https://github.com/jasonlong/cayman-theme) theme available as an option on GitHub.
+
+# SITE UPDATES
+
 You can update the site by editing the markdown in [./index.md](./index.md) (via PR), build will be
 triggered automatically on merge.
+
+For information on repository metadata on GitHub pages see [this](https://help.github.com/articles/repository-metadata-on-github-pages/) article.
+
+Custom CSS can be added in [./assets/css/style.scss](./assets/css/style.scss).
+
+# LIBRARY INCLUDES
+
+The website uses [Font Awesome](http://fontawesome.io/) ``v4.7.x`` for some icons. To update the library
+download the latest release from the website and replace the un-versioned ``font-awesome`` folder in the
+``assets/`` folder.
+
+In ``scss/_variables.scss`` update the ``$fa-font-path`` to point to the ``../font-awesome/fonts`` directory.
+
 
 # LOCAL BUILD
 
