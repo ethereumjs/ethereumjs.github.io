@@ -8,56 +8,63 @@
 <h1>Projects</h1>
 
 <div class="repo-group">
-  <h3><i class="fa fa-cogs"></i> VM / PATRICIA TREE</h3>
-  <p>Implementation of the Ethereum VM and merkle patricia tree data structure.</p>
+  <h3><i class="fa fa-cogs"></i> VIRTUAL MACHINE</h3>
+  <p>Implementation of the Ethereum virtual machine supporting the latest fork rules.</p>
   {% include repository.html name="ethereumjs-vm" %}
+</div>
+
+<div class="repo-group">
+  <h3><i class="fa fa-sitemap"></i> MERKLE TREE</h3>
+  <p>Implementation of the core Ethereum data structure.</p>
   {% include repository.html name="merkle-patricia-tree" %}
 </div>
 
+<div class="separator"></div>
+
 <div class="repo-group">
-  <h3><i class="fa fa-key"></i> KEYS / ACCOUNT</h3>
-  <p>Tools for Ethereum key and account management.</p>
+  <h3><i class="fa fa-lightbulb-o"></i> DAPP DEVELOPMENT</h3>
+  <p>Libraries and tools to support Dapp development.</p>
+  {% include repository.html name="ethrpc" %}
+  {% include repository.html name="ethereumjs-util" %}
+  {% include repository.html name="ethereumjs-units" %}
+  {% include repository.html name="ethereumjs-abi" %}
+  {% include repository.html name="ethereumjs-tx" %}
+</div>
+
+<div class="repo-group">
+  <h3><i class="fa fa-key"></i> KEY MANAGEMENT</h3>
+  <p>Tools for Ethereum key management and wallet interaction.</p>
+  {% include repository.html name="ethereumjs-wallet" %}
   {% include repository.html name="keythereum" %}
-  {% include repository.html name="ethereumjs-account" %}
+  {% include repository.html name="ethereumjs-icap" %}
+  {% include repository.html name="helpeth" %}
 </div>
 
 <div class="separator"></div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-cube"></i> BLOCKCHAIN / ABI</h3>
+  <h3><i class="fa fa-cube"></i> BLOCKCHAIN</h3>
   <p>Implementations of the main building blocks of the Ethereum blockchain.</p>
   {% include repository.html name="ethereumjs-blockchain" %}
   {% include repository.html name="ethereumjs-block" %}
-  {% include repository.html name="ethereumjs-tx" %}
-  {% include repository.html name="ethereumjs-abi" %}
+  {% include repository.html name="ethereumjs-account" %}
+  {% include repository.html name="ethereumjs-blockstream" %}
 </div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-wrench"></i> UTILITIES / TOOLS</h3>
-  <p>Helpers and utilities for everyday Ethereum life.</p>
-  {% include repository.html name="ethereumjs-util" %}
-  {% include repository.html name="helpeth" %}
-  {% include repository.html name="common" %}
+  <h3><i class="fa fa-wrench"></i> UTILITIES / BINDINGS</h3>
+  <p>Utilities libraries and bindings to third-party libraries.</p>
   {% include repository.html name="geth.js" %}
+  {% include repository.html name="ethashjs" %}
+  {% include repository.html name="rustbn.js" %}
 </div>
 
 <div class="separator"></div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-money"></i> WALLET / MINING</h3>
-  <p>Tools for wallet implementations and interactions.</p>
-  {% include repository.html name="ethereumjs-wallet" %}
-  {% include repository.html name="ethereumjs-units" %}
-  {% include repository.html name="ethereumjs-icap" %}
-  {% include repository.html name="ethashjs" %}
-</div>
-
-<div class="repo-group">
   <h3><i class="fa fa-globe"></i> NETWORK</h3>
-  <p>Network communication layer and message encoding.</p>
+  <p>Implementation of the Ethereum network communication layer.</p>
   {% include repository.html name="ethereumjs-devp2p" %}
-  {% include repository.html name="ethrpc" %}
-  {% include repository.html name="node-blockchain-server" %}
 </div>
 
 <div class="separator" style="height:0px;"></div>
