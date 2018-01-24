@@ -1,0 +1,26 @@
+{% for repository in site.github.public_repositories  %}
+{% if repository.name == include.name %}
+<pre id="github-pages-metadata" style="display:none;"></pre>
+<script>document.getElementById("github-pages-metadata").innerHTML = JSON.stringify({{ repository | jsonify }}, null, 4);</script>
+<div class="repo-box">
+  <div class="repo-header">
+    <div class="repo-header-right">
+      {{ repository.stargazers_count }} <i class="fa fa-star"></i>&nbsp;&nbsp;
+      
+      <a href="{{ repository.html_url }}" alt="GitHub URL">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    {{ repository.name }}
+  </div>
+  <div class="repo-description">
+    {{ repository.owner_name }}
+    {{ repository.description }}
+  </div>
+</div>
+
+
+
+
+{% endif %}
+{% endfor %}
