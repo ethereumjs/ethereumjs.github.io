@@ -1,0 +1,79 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "../font-awesome/scss/font-awesome";
+
+h1 {
+  margin-bottom: 25px !important;
+}
+
+.page-header a {
+  display: none;
+}
+
+.intro-text {
+  background-color: #caefdc;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.repo-group {
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (min-width: 650px) {
+	.repo-group {
+    width: 47%;
+    padding-right: 3%;
+  }
+}
+
+.repo-group h3 {
+  border-bottom: 1px solid #159957;
+}
+
+.repo-group p {
+  margin-bottom: 22px;
+}
+
+.repo-group .repo-box {
+  margin-bottom: 15px;
+}
+
+.repo-group .repo-header {
+  background-color: #018372;
+  padding: 5px 8px 5px 8px;
+  color: #fff;
+}
+
+.repo-group .repo-header a {
+  color: #fff;
+}
+
+.repo-group .repo-header-right {
+  float: right;
+}
+
+.repo-group ul {
+  font-size: 0.94rem;
+}
+
+.repo-group .repo-description {
+  border: 1px solid #018372;
+  padding: 5px 8px 5px 8px;
+  font-size: 0.9rem;
+  min-height: 75px;
+}
+
+.separator {
+  clear: both;
+  height: 35px;
+}
+
+.attribution {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
