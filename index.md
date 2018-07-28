@@ -81,7 +81,7 @@ Check out [keythereum](https://github.com/ethereumjs/keythereum) or [ethereumjs-
 
 ### Creating a Dapp?
 
-You will need to interface with the Ethereum network. [web3.js](https://github.com/ethereum/web3.js) provides a complete Javascript API to interact with the RPC interface. If looking for a more lightweight option, [ethereumjs-abi](https://github.com/ethereumjs/ethereumjs-abi) or [solidity.js](https://github.com/ethereumjs/solidity.js) can handle the ABI encoding.
+You will need to interface with the Ethereum network. [web3.js](https://github.com/ethereum/web3.js) provides a complete Javascript API to interact with the RPC interface. If looking for a more lightweight option, [ethereumjs-abi](https://github.com/ethereumjs/ethereumjs-abi) or [ethjs-abi](https://github.com/ethjs/ethjs-abi) can handle the ABI encoding.
 
 ### Build for the Web?
 
@@ -95,7 +95,6 @@ There are various high-quality Ethereum infrastructure Javascript projects outsi
 Some worth mentioning:
 
 * [web3.js](https://github.com/ethereum/web3.js): the complete API as seen in the [wiki](https://github.com/ethereum/wiki/wiki/JavaScript-API)
-* [solidity.js](https://github.com/ethereum/solidity.js): ABI encoding and decoding (the relevant code split out from web3.js)
 * [eth.js](https://github.com/ethjs): Simple JS modules for the Ethereum ecosystem
 
 # Contributing and Contact
