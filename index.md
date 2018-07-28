@@ -14,9 +14,10 @@
 </div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-sitemap"></i> MERKLE TREE</h3>
+  <h3><i class="fa fa-sitemap"></i> MERKLE TREE / RLP</h3>
   <p>Implementation of the core Ethereum data structure.</p>
   {% include repository.html name="merkle-patricia-tree" %}
+  {% include repository.html name="rlp" %}
 </div>
 
 <div class="separator"></div>
@@ -45,6 +46,7 @@
 <div class="repo-group">
   <h3><i class="fa fa-cube"></i> BLOCKCHAIN</h3>
   <p>Implementations of the main building blocks of the Ethereum blockchain.</p>
+  {% include repository.html name="ethereumjs-client" %}
   {% include repository.html name="ethereumjs-blockchain" %}
   {% include repository.html name="ethereumjs-block" %}
   {% include repository.html name="ethereumjs-account" %}
@@ -56,6 +58,7 @@
   <p>Utilities libraries and bindings to third-party libraries.</p>
   {% include repository.html name="geth.js" %}
   {% include repository.html name="ethashjs" %}
+  {% include repository.html name="node-ethash" %}
   {% include repository.html name="rustbn.js" %}
 </div>
 
