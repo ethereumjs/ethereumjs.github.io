@@ -14,9 +14,10 @@
 </div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-sitemap"></i> MERKLE TREE</h3>
+  <h3><i class="fa fa-sitemap"></i> MERKLE TREE / RLP</h3>
   <p>Implementation of the core Ethereum data structure.</p>
   {% include repository.html name="merkle-patricia-tree" %}
+  {% include repository.html name="rlp" %}
 </div>
 
 <div class="separator"></div>
@@ -45,6 +46,7 @@
 <div class="repo-group">
   <h3><i class="fa fa-cube"></i> BLOCKCHAIN</h3>
   <p>Implementations of the main building blocks of the Ethereum blockchain.</p>
+  {% include repository.html name="ethereumjs-client" %}
   {% include repository.html name="ethereumjs-blockchain" %}
   {% include repository.html name="ethereumjs-block" %}
   {% include repository.html name="ethereumjs-account" %}
@@ -56,6 +58,7 @@
   <p>Utilities libraries and bindings to third-party libraries.</p>
   {% include repository.html name="geth.js" %}
   {% include repository.html name="ethashjs" %}
+  {% include repository.html name="node-ethash" %}
   {% include repository.html name="rustbn.js" %}
 </div>
 
@@ -78,7 +81,7 @@ Check out [keythereum](https://github.com/ethereumjs/keythereum) or [ethereumjs-
 
 ### Creating a Dapp?
 
-You will need to interface with the Ethereum network. [web3.js](https://github.com/ethereum/web3.js) provides a complete Javascript API to interact with the RPC interface. If looking for a more lightweight option, [ethereumjs-abi](https://github.com/ethereumjs/ethereumjs-abi) or [solidity.js](https://github.com/ethereumjs/solidity.js) can handle the ABI encoding.
+You will need to interface with the Ethereum network. [web3.js](https://github.com/ethereum/web3.js) provides a complete Javascript API to interact with the RPC interface. If looking for a more lightweight option, [ethereumjs-abi](https://github.com/ethereumjs/ethereumjs-abi) or [ethjs-abi](https://github.com/ethjs/ethjs-abi) can handle the ABI encoding.
 
 ### Build for the Web?
 
@@ -92,7 +95,6 @@ There are various high-quality Ethereum infrastructure Javascript projects outsi
 Some worth mentioning:
 
 * [web3.js](https://github.com/ethereum/web3.js): the complete API as seen in the [wiki](https://github.com/ethereum/wiki/wiki/JavaScript-API)
-* [solidity.js](https://github.com/ethereum/solidity.js): ABI encoding and decoding (the relevant code split out from web3.js)
 * [eth.js](https://github.com/ethjs): Simple JS modules for the Ethereum ecosystem
 
 # Contributing and Contact
