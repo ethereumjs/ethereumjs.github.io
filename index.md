@@ -95,6 +95,7 @@ There are various high-quality Ethereum infrastructure Javascript projects outsi
 Some worth mentioning:
 
 * [web3.js](https://github.com/ethereum/web3.js): the complete API as seen in the [wiki](https://github.com/ethereum/wiki/wiki/JavaScript-API)
+* [ethers.js](https://github.com/ethers-io/ethers.js): the complete API as seen in the [docs](https://docs.ethers.io)
 * [eth.js](https://github.com/ethjs): Simple JS modules for the Ethereum ecosystem
 
 # Contributing and Contact
