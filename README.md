@@ -1,6 +1,6 @@
 # SYNOPSIS
 
-[![Gitter](https://img.shields.io/gitter/room/ethereum/ethereumjs-lib.svg?style=flat-square)](https://gitter.im/ethereum/ethereumjs-lib) or #ethereumjs on freenode 
+[![Discord][discord-badge]][discord-link]
 
 # INTRODUCTION
 
@@ -54,5 +54,5 @@ And being served on http://127.0.0.1:4000 with:
 jekyll serve
 ```
 
-
-
+[discord-badge]: https://img.shields.io/static/v1?logo=discord&label=discord&message=Join&color=blue
+[discord-link]: https://discord.gg/TNwARpR
