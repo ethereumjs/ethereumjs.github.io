@@ -32,7 +32,7 @@ In ``scss/_variables.scss`` update the ``$fa-font-path`` to point to the ``../fo
 
 # LOCAL BUILD
 
-To build the site locally you have to have a working [Ruby](https://www.ruby-lang.org) ``2.4.x`` environment (you can use the [RVM](https://rvm.io/) Ruby version manager for this) and ``bundle`` and ``Jekyll`` installed.
+To build the site locally you have to have a working [Ruby](https://www.ruby-lang.org) ``3.2 .x`` environment (you can use the [RVM](https://rvm.io/) Ruby version manager for this) and ``bundle`` and ``Jekyll`` installed.
 
 Install the ``GitHub pages`` gem from the ``Gemfile`` with:
 
@@ -45,13 +45,13 @@ See also [this article](https://help.github.com/articles/setting-up-your-github-
 The site can then be build with:
 
 ```
-jekyll build
+bundle exec jekyll build
 ```
 
 And being served on http://127.0.0.1:4000 with:
 
 ```
-jekyll serve
+bundle exec jekyll serve
 ```
 
 [discord-badge]: https://img.shields.io/static/v1?logo=discord&label=discord&message=Join&color=blue
