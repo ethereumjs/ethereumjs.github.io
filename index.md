@@ -13,7 +13,7 @@
 <div class="repo-group">
   <h3><i class="fa fa-cogs"></i> VIRTUAL MACHINE (EVM)</h3>
   <p>Implementation of the Ethereum Virtual Machine in TypeScript supporting
-  all hardforks and allowing for easy integration of the EVM in browser applications.</p>
+  all hardforks and allowing for easy integration of the EVM in web applications.</p>
 </div>
 
 <div class="repo-group">
@@ -30,7 +30,7 @@
       <ul>
         <li>All hardforks until Shanghai</li>
         <li>Preliminary Cancun support (incl. EIP-4844)</li>
-        <li>Extended tracing and debug support</li>
+        <li>Basic tracing and debug support</li>
         <li>Flexible EIP on/off engine</li>
         <li>Modular EVM core</li>
       </ul>
@@ -232,7 +232,7 @@
       @ethereumjs/devp2p
     </div>
     <div class="repo-description">
-      Devp2p implementation with support for Discovery (DPT), RLPx transport, ETH protocol and SNAP.
+      Devp2p implementation with support for Discovery (DPT), RLPx transport, ETH protocol, LES and SNAP.
     </div>
 </div>
 </div>
