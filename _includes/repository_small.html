@@ -1,0 +1,7 @@
+{% for repository in site.github.public_repositories  %}
+{% if repository.name == include.name %}
+<pre id="github-pages-metadata" style="display:none;"></pre>
+<script>document.getElementById("github-pages-metadata").innerHTML = JSON.stringify({{ repository | jsonify }}, null, 4);</script>
+      {{ repository.stargazers_count }} <i class="fa fa-star"></i>
+{% endif %}
+{% endfor %}
