@@ -242,12 +242,14 @@
 
 <h1>Contact</h1>
 
-The EthereumJS libraries are maintained and developed by the Ethereum Foundation JavaScript Team.
+The EthereumJS libraries are maintained and developed by the Ethereum Foundation JavaScript Team
+together with the wider Ethereum JavaScript developer community.
 
 <div class="intro-text">
   You can reach out to us on 
-    <a href="https://discord.gg/TNwARpR">Discord</a> or 
-    <a href="https://github.com/ethereumjs">GitHub</a>.
+    <a href="https://discord.gg/TNwARpR">Discord</a>,  
+    <a href="https://github.com/ethereumjs">GitHub</a> or 
+    <a href="https://twitter.com/EFJavaScript">Twitter</a>.
 </div>
 
 <p class="attribution">
