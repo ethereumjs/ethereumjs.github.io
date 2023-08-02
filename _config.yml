@@ -5,10 +5,6 @@ google_analytics:
 show_downloads: true
 theme: jekyll-theme-cayman
 
-gems:
-  - jekyll-mentions
-  - jekyll-github-metadata
-
 sass:
   load_paths:
     - assets/css                        # original sass

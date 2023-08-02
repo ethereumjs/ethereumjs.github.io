@@ -1,113 +1,255 @@
 
 <div class="intro-text">
-  The <a href="https://github.com/ethereumjs/">EthereumJS</a> community builds Javascript tools implementing core <a href="https://ethereum.org">Ethereum</a>
-  technologies, protocols and APIs for helping developers to interact with the Ethereum network and build
-  their own applications.
+  <a href="https://github.com/ethereumjs/">EthereumJS</a> is an implementation of the core <a href="https://ethereum.org">Ethereum</a> Execution Layer (EL) Protocol stack in TypeScript.
 </div>
+
+<div class="intro-text">
+  <a href="https://github.com/ethereumjs/ethereumjs-monorepo">https://github.com/ethereumjs/ethereumjs-monorepo</a> 
+  &nbsp;{% include repository_small.html name="ethereumjs-monorepo" %}
+</div> 
 
 <h1>Projects</h1>
 
 <div class="repo-group">
-  <h3><i class="fa fa-cogs"></i> VIRTUAL MACHINE</h3>
-  <p>Implementation of the Ethereum virtual machine supporting the latest fork rules.</p>
-  {% include repository.html name="ethereumjs-vm" %}
+  <h3><i class="fa fa-cogs"></i> VIRTUAL MACHINE (EVM)</h3>
+  <p>Implementation of the Ethereum Virtual Machine in TypeScript supporting
+  all hardforks and allowing for easy integration of the EVM in web applications.</p>
 </div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-sitemap"></i> MERKLE TREE / RLP</h3>
-  <p>Implementation of the core Ethereum data structure.</p>
-  {% include repository.html name="merkle-patricia-tree" %}
-  {% include repository.html name="rlp" %}
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/vm" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/vm
+    </div>
+    <div class="repo-description">
+      <ul>
+        <li>All hardforks until Shanghai</li>
+        <li>Preliminary Cancun support (incl. EIP-4844)</li>
+        <li>Basic tracing and debug support</li>
+        <li>Flexible EIP on/off engine</li>
+        <li>Modular EVM core</li>
+      </ul>
+    </div>
 </div>
-
-<div class="separator"></div>
-
-<div class="repo-group">
-  <h3><i class="fa fa-lightbulb-o"></i> DAPP DEVELOPMENT</h3>
-  <p>Libraries and tools to support Dapp development.</p>
-  {% include repository.html name="ethrpc" %}
-  {% include repository.html name="ethereumjs-util" %}
-  {% include repository.html name="ethereumjs-units" %}
-  {% include repository.html name="ethereumjs-abi" %}
-  {% include repository.html name="ethereumjs-tx" %}
-</div>
-
-<div class="repo-group">
-  <h3><i class="fa fa-key"></i> KEY MANAGEMENT</h3>
-  <p>Tools for Ethereum key management and wallet interaction.</p>
-  {% include repository.html name="ethereumjs-wallet" %}
-  {% include repository.html name="keythereum" %}
-  {% include repository.html name="ethereumjs-icap" %}
-  {% include repository.html name="helpeth" %}
 </div>
 
 <div class="separator"></div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-cube"></i> BLOCKCHAIN</h3>
-  <p>Implementations of the main building blocks of the Ethereum blockchain.</p>
-  {% include repository.html name="ethereumjs-client" %}
-  {% include repository.html name="ethereumjs-blockchain" %}
-  {% include repository.html name="ethereumjs-block" %}
-  {% include repository.html name="ethereumjs-account" %}
-  {% include repository.html name="ethereumjs-blockstream" %}
+  <h3><i class="fa fa-cogs"></i> Execution Layer Client</h3>
+  <p>Execution Layer client similar to Go-Ethereum or Nethermind in TypeScript with support for
+  full sync and most of the JSON RPC endpoints.</p>
 </div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-wrench"></i> UTILITIES / BINDINGS</h3>
-  <p>Utilities libraries and bindings to third-party libraries.</p>
-  {% include repository.html name="geth.js" %}
-  {% include repository.html name="ethashjs" %}
-  {% include repository.html name="node-ethash" %}
-  {% include repository.html name="rustbn.js" %}
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/client
+    </div>
+    <div class="repo-description">
+      <ul>
+        <li>Full sync support</li>
+        <li>Engine API</li>
+        <li>JSON-RPC via HTTP or Websocket</li>
+        <li>Syncs small and mid-size test networks</li>
+        <li>Used for protocol development (EIP-4844)</li>
+      </ul>
+    </div>
+</div>
 </div>
 
 <div class="separator"></div>
 
 <div class="repo-group">
-  <h3><i class="fa fa-globe"></i> NETWORK</h3>
+  <h3><i class="fa fa-cogs"></i> Ultralight</h3>
+  <p>Portal Network client implementation in TypeScript (in Development).</p>
+</div>
+
+<div class="repo-group">
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ultralight" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      Ultralight
+    </div>
+    <div class="repo-description">
+      <ul>
+        <li>History Network Support</li>
+        <li>State Network (in development)</li>
+        <li>Beacon Chain Network (in development)</li>
+      </ul>
+    </div>
+</div>
+</div>
+
+<div class="separator"></div>
+
+<div class="repo-group">
+  <h3><i class="fa fa-cube"></i> Blockchain</h3>
+  <p>Core building blocks for an Ethereum blockchain including a transaction library supporting all existing 
+  transaction types.</p>
+</div>
+
+<div class="repo-group">
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/tx" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/tx
+    </div>
+    <div class="repo-description">
+      Implementation of the various transaction types.
+    </div>
+  </div>
+
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/block" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/block
+    </div>
+    <div class="repo-description">
+      Block representations for all hardforks.
+    </div>
+  </div>
+
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/blockchain" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/blockchain
+    </div>
+    <div class="repo-description">
+      Ethereum mainnet-compatible blockchain.
+    </div>
+  </div>
+  
+</div>
+
+<div class="separator"></div>
+
+<div class="repo-group">
+  <h3><i class="fa fa-cogs"></i> Protocol</h3>
+  <p>Implementations of protocol components and data structures.</p>
+</div>
+
+<div class="repo-group">
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/trie" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/trie
+    </div>
+    <div class="repo-description">
+      Implementation of a Merkle Patricia Tree.
+    </div>
+  </div>
+
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/rlp" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/rlp
+    </div>
+    <div class="repo-description">
+      RLP encoding and decoding.
+    </div>
+  </div>
+
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/util" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/util
+    </div>
+    <div class="repo-description">
+      Utilities for 4844, bytes, signatures, withdrawals, addresses and other.
+    </div>
+  </div>
+
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/wallet" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/wallet
+    </div>
+    <div class="repo-description">
+      Wallet implementation with key management and various import formats.
+    </div>
+  </div>
+</div>
+
+<div class="separator"></div>
+
+
+<div class="repo-group">
+  <h3><i class="fa fa-globe"></i> Network</h3>
   <p>Implementation of the Ethereum network communication layer.</p>
-  {% include repository.html name="ethereumjs-devp2p" %}
 </div>
 
-<div class="separator" style="height:0px;"></div>
+<div class="repo-group">
+  <div class="repo-box">
+    <div class="repo-header">
+      <div class="repo-header-right">
+        <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/devp2p" alt="GitHub URL">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      @ethereumjs/devp2p
+    </div>
+    <div class="repo-description">
+      Devp2p implementation with support for Discovery (DPT), RLPx transport, ETH protocol, LES and SNAP.
+    </div>
+</div>
+</div>
 
-<h1>Use Cases</h1>
+<div class="separator"></div>
 
-### Creating an Online Wallet?
 
-Check out [keythereum](https://github.com/ethereumjs/keythereum) or [ethereumjs-wallet](https://github.com/ethereumjs/ethereumjs-wallet) (with HD wallet support) for managing keys and [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx) for creating transactions with them.
-[ethereumjs-icap](https://github.com/ethereumjs/ethereumjs-icap) might also come handy for dealing with the ICAP (Ethereum in IBAN) format.
+<h1>Contact</h1>
 
-### Creating a Dapp?
-
-You will need to interface with the Ethereum network. [web3.js](https://github.com/ethereum/web3.js) and [ethers.js](https://github.com/ethers-io/ethers.js) both provide a complete Javascript API to interact with the RPC interface. If looking for a more lightweight option, [ethereumjs-abi](https://github.com/ethereumjs/ethereumjs-abi) or [ethjs-abi](https://github.com/ethjs/ethjs-abi) can handle the ABI encoding.
-
-### Build for the Web?
-
-Most of the EthereumJS libraries can be transpiled with [babel](https://babeljs.io/) to be used in web context.
-We provide [browser-builds](https://github.com/ethereumjs/browser-builds) for some EthereumJS libraries, be
-warned though that these might often be slightly out of date.
-
-# Projects not Tracked Here
-
-There are various high-quality Ethereum infrastructure Javascript projects outside the EthereumJS scope.
-Some worth mentioning:
-
-* [web3.js](https://github.com/ethereum/web3.js): the complete API as seen in the [wiki](https://github.com/ethereum/wiki/wiki/JavaScript-API)
-* [ethers.js](https://github.com/ethers-io/ethers.js): the complete API as seen in the [docs](https://docs.ethers.io)
-* [eth.js](https://github.com/ethjs): Simple JS modules for the Ethereum ecosystem
-
-# Contributing and Contact
-
-Contributing to each of the projects is preferably done via pull requests. To start you can watch out for
-"help wanted" issues on the organization [GitHub page](https://github.com/ethereumjs/) or have a look for
-suitable issues on the various repos.
+The EthereumJS libraries are maintained and developed by the Ethereum Foundation JavaScript Team
+together with the wider Ethereum JavaScript developer community.
 
 <div class="intro-text">
   You can reach out to us on 
-    <a href="https://gitter.im/ethereum/ethereumjs-lib">Gitter</a> or 
-    <a href="https://webchat.freenode.net/?channels=ethereumjs">#ethereumjs</a> on freenode.
+    <a href="https://discord.gg/TNwARpR">Discord</a>,  
+    <a href="https://github.com/ethereumjs">GitHub</a> or 
+    <a href="https://twitter.com/EFJavaScript">Twitter</a>.
 </div>
 
 <p class="attribution">
