@@ -6,6 +6,10 @@
 <div class="intro-text">
   <a href="https://github.com/ethereumjs/ethereumjs-monorepo">https://github.com/ethereumjs/ethereumjs-monorepo</a> 
   &nbsp;{% include repository_small.html name="ethereumjs-monorepo" %}
+</div>
+
+<div class="intro-text">
+  <img src="/assets/images/img1.png" alt="EthereumJS GitHub">
 </div> 
 
 <h1>Projects</h1>
