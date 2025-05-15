@@ -28,7 +28,7 @@
     </div>
     <div class="repo-description">
       <ul>
-        <li>All hardforks until Shanghai</li>
+        <li>All hardforks until Pectra</li>
         <li>Preliminary Cancun support (incl. EIP-4844)</li>
         <li>Basic tracing and debug support</li>
         <li>Flexible EIP on/off engine</li>
