@@ -87,6 +87,20 @@
 
 <div class="separator"></div>
 
+<div class="repo-group">
+  <h3>Cryptography Funding</h3>
+
+  <p>We try to make sure that Ethereum L1 browser cryptography gaps get closed. We lately initiated and funded implementations for the <a href="https://github.com/paulmillr/noble-curves?tab=readme-ov-file#bn254-aka-alt_bn128">BN254 curve</a> used for EVM curve precompiles, EIP-4844 compliant <a href="https://github.com/paulmillr/micro-eth-signer?tab=readme-ov-file#kzg-peerdas-verkle">KZG</a> as well as the KZG crypto preparing for <a href="https://github.com/paulmillr/micro-eth-signer/releases/tag/0.15.0">PeerDAS</a> (special thanks to @paulmillr! ❤️). If you see additional gaps or if you are interested in a cooperation reach out!</p>
+</div>
+
+<div class="repo-group">
+  <div class="repo-box">
+    <img src="/assets/images/kzg_code.png" alt="micro-eth-signer GitHub - KZG Code Example">
+  </div>
+</div>
+
+<div class="separator"></div>
+
 <h1>Contact</h1>
 
 Feel inspired? Again, get in touch!
