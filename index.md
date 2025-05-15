@@ -43,7 +43,7 @@
 
 <div class="repo-group">
   <h3>Protocol R&D</h3>
-  <p>We do various early-on EIP code integrations, see e.g. <a href="https://github.com/ethereumjs/ethereumjs-monorepo/pull/3976">PeerDAS</a>, <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/binarytree">Binary Tree</a> or native <a href="https://github.com/ethereumjs/ethereumjs-monorepo/pull/3849">SSZ</a> as examples. Along the way we engage in research calls and help with spec refinements on the EIP GitHub like <a href="https://github.com/ethereum/EIPs/pull/9460">here</a> and do coverage work and contribute test cases to the execution-spec-tests GitHub like <a href="https://github.com/ethereum/execution-spec-tests/pull/1371">here</a>. Our EthereumJS <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client" alt="GitHub URL">research client</a> is an important enabler for this work.
+  <p>We do various early-on EIP code integrations, see e.g. <a href="https://github.com/ethereumjs/ethereumjs-monorepo/pull/3976">PeerDAS</a>, <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/binarytree">Binary Tree</a> or <a href="https://github.com/ethereumjs/ethereumjs-monorepo/pull/3849">SSZ-ificaton</a> as examples. Along the way we engage in research calls and help with spec refinements on the EIP GitHub like <a href="https://github.com/ethereum/EIPs/pull/9460">here</a> and do coverage work and contribute test cases to the execution-spec-tests GitHub like <a href="https://github.com/ethereum/execution-spec-tests/pull/1371">here</a>. Our EthereumJS <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client" alt="GitHub URL">research client</a> is an important enabler for this work.
   </p>
 </div>
 
@@ -58,7 +58,7 @@
 <div class="repo-group">
   <h3>Portal Network</h3>
 
-  <p>Beside we have our own TypeScript implementation - called <a href="https://github.com/ethereumjs/ultralight">Ultralight</a> -  for the <a href="https://github.com/ethereum/portal-network-specs">Portal Network</a>, which now gets its first production usage as a decentralized distributing system for historical block data to enable EIP-4444 history data expiry. We will continue to actively contribute to specification and testing for upcoming network types like the Portal state network. 
+  <p>Beside we have our own TypeScript implementation - called <a href="https://github.com/ethereumjs/ultralight">Ultralight</a> -  for the <a href="https://github.com/ethereum/portal-network-specs">Portal Network</a>, which now gets its first production usage as a decentralized distributing system for historical block data to enable EIP-4444 history data expiry. We will continue to actively contribute to specification and testing for upcoming network types like the Portal State network. 
   </p>
 </div>
 
@@ -72,7 +72,7 @@
 <div class="separator"></div>
 
 <div class="repo-group">
-  <h3>Dedicated Stateless Reserach</h3>
+  <h3>Dedicated Stateless Research</h3>
 
   <p>We are engaged into research around statelessness for some time now and joined early Verkle/Stateless 
   <a href="https://github.com/ethpandaops/verkle-devnets">test networks</a> and contributed to both testing and research. We did both <a href="https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/verkle">Verkle</a> and 
