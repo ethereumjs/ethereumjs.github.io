@@ -9,14 +9,14 @@
 <h1>Who we are?</h1>
 
 <div class="repo-group">
-  <p>We are currently a team of 7 - see <a href="https://x.com/0xstark/status/1922642395654394082" target="_blank">org chart</a> aside - doing both "everyday" Ethereum Layer 1 coding as well as EIP research and specification work.</p>
+  <p>We are currently a team of 7 - see <a href="https://ethereum.foundation/people" target="_blank">org chart</a> aside - doing both "everyday" Ethereum Layer 1 coding as well as EIP research and specification work.</p>
   
   <p>Due to the nature of our work, our team is placed very much at the crossroads of developer tooling and the Ethereum Layer 1 protocol. If this resonates with you and you look for an exchange or cooperation, please reach out!</p>
 </div>
 
 <div class="repo-group">
   <div class="repo-box">
-    <img src="/assets/images/ef_org.jpg" alt="Ethereum Foundation - Org Chart">
+    <img src="/assets/images/ef-org-chart_may-2025.png" alt="Ethereum Foundation - Org Chart May 2025">
   </div>
 </div>
 
