@@ -4,7 +4,9 @@
   See the <a href="https://github.com/ethereumjs/"><b>EthereumJS</b></a> GitHub as a main entrypoint to our code or reach out to us directly on <a href="https://github.com/ethereumjs/"><b>Discord</b></a>.
 </div>
 
-  
+<div class="intro-text">
+  <b>Update:</b> The JavaScript team has been dissolved along a major Protocol reorg within the EF, see <a href="https://blog.ethereum.org/2025/06/02/announcing-protocol" target="_blank">announcement</a>. Path forward is not yet clear, if you have suggestions or constructive ideas reach out!
+</div>
 
 <h1>Who we are?</h1>
 
