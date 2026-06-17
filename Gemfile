@@ -1,15 +1,8 @@
 source 'https://rubygems.org'
 
-# Ruby 3.3.x matches GitHub Pages; 4.0.x works locally. See README "Local build".
-ruby '>= 3.3', '< 4.1'
+# Match the GitHub Pages build environment (github-pages gem, Jekyll 3.x, Ruby 3.3).
+# See https://pages.github.com/versions/ and run: bundle exec github-pages versions
+ruby '~> 3.3.0'
 
-gem 'jekyll', '~> 4.3'
-gem 'liquid', '>= 4.0.4'
+gem 'github-pages', group: :jekyll_plugins
 gem 'webrick', '~> 1.8'
-
-# Ruby 3.4+ no longer bundles these stdlib gems.
-gem 'csv'
-gem 'base64'
-gem 'bigdecimal'
-gem 'json'
-gem 'logger'
