@@ -8,9 +8,7 @@ Website to give an overview of the various ``EthereumJS`` projects and an
 introduction to the ecosystem and the community.
 
 Site is hosted at https://ethereumjs.github.io/ via [GitHub Pages](https://pages.github.com) and
-build with [Jekyll](https://jekyllrb.com/) (see also ["Jekyll and GH Pages"](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)).
-
-It uses the [Cayman](https://github.com/jasonlong/cayman-theme) theme available as an option on GitHub.
+built with [Jekyll 4](https://jekyllrb.com/) (custom layout + SCSS, no theme).
 
 # SITE UPDATES
 
@@ -32,27 +30,40 @@ In ``scss/_variables.scss`` update the ``$fa-font-path`` to point to the ``../fo
 
 # LOCAL BUILD
 
-To build the site locally you have to have a working [Ruby](https://www.ruby-lang.org) ``3.2 .x`` environment (you can use the [RVM](https://rvm.io/) Ruby version manager for this) and ``bundle`` and ``Jekyll`` installed.
+Requires **Ruby >= 3.3 and < 4.1** (see [`Gemfile`](./Gemfile)). The macOS system Ruby (2.6) is too old. Ruby **4.0.x** works; [`.ruby-version`](./.ruby-version) pins **3.3.7** as the recommended default.
 
-Install the ``GitHub pages`` gem from the ``Gemfile`` with:
+### Option A — Homebrew (simplest on macOS)
 
-```
-bundle install
-```
-
-See also [this article](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) for further installation instructions.
-
-The site can then be build with:
-
-```
-bundle exec jekyll build
+```sh
+brew install ruby
+echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+gem install bundler
 ```
 
-And being served on http://127.0.0.1:4000 with:
+On Intel Macs, use `/usr/local/opt/ruby/bin` instead of `/opt/homebrew/opt/ruby/bin`.
 
+### Option B — rbenv
+
+```sh
+brew install rbenv ruby-build
+rbenv install 3.3.7
+cd ethereumjs.github.io   # picks up .ruby-version
+gem install bundler
 ```
+
+### Install gems & preview
+
+```sh
+./bin/setup
+# or: bundle install
+
 bundle exec jekyll serve
 ```
+
+Open http://127.0.0.1:4000
+
+See also [GitHub's Jekyll local setup guide](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
 
 [discord-badge]: https://img.shields.io/static/v1?logo=discord&label=discord&message=Join&color=blue
 [discord-link]: https://discord.gg/TNwARpR

@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+ruby_version() {
+  ruby -e 'print RUBY_VERSION' 2>/dev/null || true
+}
+
+if ! ruby -e 'require "rubygems"; v = Gem::Version.new(RUBY_VERSION); exit(v >= Gem::Version.new("3.3") && v < Gem::Version.new("4.1") ? 0 : 1)' 2>/dev/null; then
+  cat <<EOF
+Ruby $(ruby_version || echo "not found") is not supported.
+
+This site needs Ruby >= 3.3 and < 4.1 (see Gemfile). macOS system Ruby (2.6) will not work.
+Prefer 3.3.x to match GitHub Pages; Ruby 4.0.x is fine for local preview.
+
+Quick setup with Homebrew:
+
+  brew install ruby
+  echo 'export PATH="/opt/homebrew/opt/ruby/bin:\$PATH"' >> ~/.zshrc
+  source ~/.zshrc
+  gem install bundler
+  cd $(pwd)
+  bundle install
+
+Or with rbenv:
+
+  brew install rbenv ruby-build
+  rbenv install 3.3.7
+  rbenv local 3.3.7
+  gem install bundler
+  bundle install
+
+Then preview with: bundle exec jekyll serve
+EOF
+  exit 1
+fi
+
+echo "Using Ruby $(ruby_version)"
+bundle install
+echo
+echo "Done. Run: bundle exec jekyll serve"

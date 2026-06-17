@@ -1,12 +1,8 @@
-title: EthereumJS / EF Javascript
-description: Ethereum Layer 1 Protocol Implementations in TypeScript.
+title: EthereumJS
+description: Ethereum Layer 1 protocol libraries in TypeScript — modular, browser-ready, community-maintained.
 repository: ethereumjs
-google_analytics: 
-show_downloads: true
-theme: jekyll-theme-cayman
+show_downloads: false
 
 sass:
   load_paths:
-    - assets/css                        # original sass
-
-
+    - assets/css
