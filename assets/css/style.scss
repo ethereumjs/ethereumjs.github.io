@@ -1,8 +1,6 @@
 ---
 ---
 
-@use 'sass:color';
-
 /* ── Variables ─────────────────────────────────────────── */
 
 $bg: #0b0e14;
@@ -152,7 +150,7 @@ main {
   color: #fff;
 
   &:hover {
-    background: color.adjust($accent, $lightness: 6%);
+    background: lighten($accent, 6%);
     color: #fff;
   }
 }

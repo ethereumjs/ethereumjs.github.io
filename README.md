@@ -8,7 +8,8 @@ Website to give an overview of the various ``EthereumJS`` projects and an
 introduction to the ecosystem and the community.
 
 Site is hosted at https://ethereumjs.github.io/ via [GitHub Pages](https://pages.github.com) and
-built with [Jekyll 4](https://jekyllrb.com/) (custom layout + SCSS, no theme).
+built with the [github-pages](https://github.com/github/pages-gem) gem (Jekyll 3.x, custom layout + SCSS).
+Local builds should use **Ruby 3.3.x** to match the Pages environment — see [Dependency versions](https://pages.github.com/versions/).
 
 # SITE UPDATES
 
@@ -17,7 +18,7 @@ triggered automatically on merge.
 
 For information on repository metadata on GitHub pages see [this](https://help.github.com/articles/repository-metadata-on-github-pages/) article.
 
-Custom CSS can be added in [./assets/css/style.scss](./assets/css/style.scss).
+Custom CSS lives in [./assets/css/style.scss](./assets/css/style.scss). Use **Ruby Sass–compatible** syntax only (`lighten()`, no `@use` / `color.adjust()` — GitHub Pages runs Jekyll 3 + Ruby Sass, not Dart Sass).
 
 # LIBRARY INCLUDES
 
@@ -30,25 +31,25 @@ In ``scss/_variables.scss`` update the ``$fa-font-path`` to point to the ``../fo
 
 # LOCAL BUILD
 
-Requires **Ruby >= 3.3 and < 4.1** (see [`Gemfile`](./Gemfile)). The macOS system Ruby (2.6) is too old. Ruby **4.0.x** works; [`.ruby-version`](./.ruby-version) pins **3.3.7** as the recommended default.
+Use **Ruby 3.3.x** — the same major/minor series as [GitHub Pages](https://pages.github.com/versions/). Do **not** use macOS system Ruby (2.6) or Ruby 4; both will cause gem or Sass mismatches.
 
-### Option A — Homebrew (simplest on macOS)
+[`.ruby-version`](./.ruby-version) pins **3.3.7**.
 
-```sh
-brew install ruby
-echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-gem install bundler
-```
-
-On Intel Macs, use `/usr/local/opt/ruby/bin` instead of `/opt/homebrew/opt/ruby/bin`.
-
-### Option B — rbenv
+### Option A — rbenv (recommended)
 
 ```sh
 brew install rbenv ruby-build
 rbenv install 3.3.7
 cd ethereumjs.github.io   # picks up .ruby-version
+gem install bundler
+```
+
+### Option B — Homebrew Ruby 3.3
+
+```sh
+brew install ruby@3.3
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"   # Intel: /usr/local/opt/ruby@3.3/bin
+ruby --version   # should show 3.3.x
 gem install bundler
 ```
 
@@ -59,6 +60,12 @@ gem install bundler
 # or: bundle install
 
 bundle exec jekyll serve
+```
+
+Compare your local gem set with GitHub Pages:
+
+```sh
+bundle exec github-pages versions
 ```
 
 Open http://127.0.0.1:4000
